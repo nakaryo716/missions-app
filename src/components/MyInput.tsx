@@ -1,4 +1,4 @@
-import { Input as BaseInput } from "@mui/material"
+import { TextField } from "@mui/material"
 import { ChangeEvent } from "react";
 
 interface InputProps {
@@ -10,19 +10,13 @@ interface InputProps {
 
 export default function Input({type, required, autoComp, handleChange}: InputProps) {
   return(
-    <BaseInput
+    <TextField
+      variant="filled"
       type={type}
-      onChange={e => handleChange(e)}
       required={required}
       autoComplete={autoComp}
-      sx={style}
+      onChange={handleChange}
+      fullWidth
     />
   );
-}
-
-const style = {
-  backgroundColor: "white",
-  borderRadius: 2,
-  width: "100%",
-  height: 40,
 }
