@@ -19,7 +19,7 @@ export default function SignUp(props: SignUpProps) {
 
   return(
     <>
-      <Box sx={{width: "80%", maxWidth: 500, padding: 5, backgroundColor: "#b0c4de", color: "white"}}>
+      <Box sx={{width: "80%", maxWidth: 500, padding: 5, backgroundColor: "#b0c4de", color: "black"}}>
         <Box sx={{display: "flex", justifyContent: "center"}}>
           <h1>ユーザー新規作成</h1>
         </Box>
