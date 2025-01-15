@@ -37,10 +37,15 @@ export default function SignUp(props: SignUpProps) {
             <MyInput type="password" handleChange={handleSetPassword} required={true} autoComp="new-password" />
           </Box>
           <Box sx={{display: "flex", justifyContent: "center"}}>
-            <input type="submit" value="登録"/>
+            <input style={style} type="submit" value="登録"/>
           </Box>
         </form>
       </Box>
     </>
   )
+}
+
+const style = {
+  height: 40,
+  width: 100,
 }

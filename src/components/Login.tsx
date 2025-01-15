@@ -31,10 +31,14 @@ export default function Login(props: LoginProps) {
             <MyInput type="password" handleChange={handleSetPassword} required={true} autoComp="new-password" />
           </Box>
           <Box sx={{display: "flex", justifyContent: "center"}}>
-            <input type="submit" value="Missionsにログイン"/>
+            <input style={style} type="submit" value="Missionsにログイン"/>
           </Box>
         </form>
       </Box>
     </>
   )
+}
+
+const style = {
+  height: 40,
 }
