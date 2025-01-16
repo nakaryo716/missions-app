@@ -1,16 +1,14 @@
 'use client'
 
 import MissionsList from "@/components/MissionsList";
-import StatusBar from "@/components/StatusBar";
 import { Box } from "@mui/material";
 
-export default function Home() {
+export default function MissionsPage() {
   return(
     <>
-        <StatusBar level={10} expRatio={30}/>
-        <Box sx={{display: "flex", alignItems: "center", justifyContent: "center"}}>
-          <MissionsList missions={missions} />
-        </Box>
+      <Box sx={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <MissionsList missions={missions} />
+      </Box>
     </>
   );
 }
