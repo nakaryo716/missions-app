@@ -17,12 +17,13 @@ export default function StatusBar({level, expRatio}: StatusBarProps) {
 }
 
 const s = {
-  borderBottom: "solid;",
   marginBottom: 3,
   height: "60"
 }
 
 const style = {
-  "width": 300,
-  "margin": 2,
+  width: "50vw",
+  height: 10,
+  borderRadius: 100,
+  margin: 2,
 }
