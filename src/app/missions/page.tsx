@@ -1,12 +1,16 @@
 'use client'
 
+import Header from "@/components/Header";
 import MissionsList from "@/components/MissionsList";
 import { Box } from "@mui/material";
 
 export default function MissionsPage() {
   return(
     <>
-      <Box sx={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+      <Box sx={{marginBottom: 2}}>
+        <Header />
+      </Box>
+      <Box sx={{display: "flex", alignItems: "center", justifyContent: "center", height: "85vh", backgroundColor: "#f5f5f5"}}>
         <MissionsList missions={missions} />
       </Box>
     </>

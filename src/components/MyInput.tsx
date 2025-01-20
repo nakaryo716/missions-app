@@ -11,12 +11,12 @@ interface InputProps {
 export default function Input({type, required, autoComp, handleChange}: InputProps) {
   return(
     <TextField
-      variant="filled"
       type={type}
       required={required}
       autoComplete={autoComp}
       onChange={handleChange}
       fullWidth
+      sx={{backgroundColor: "white"}}
     />
   );
 }
